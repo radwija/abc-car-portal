@@ -31,56 +31,57 @@
 </head>
 
 <body>
+	<%@ include file="header.jsp" %>
+		<div class="container">
+			<h1>Welcome to <span style="color: #3252DF;">ABC CAR</span></h1>
+			<div class="row">
+				<div class="col-6">
+					<c:if test="${error_string != null}">
 
+						<div class="alert alert-danger">${error_string} Click here to <a
+								href="register_user">
+								Register</a></div>
 
+					</c:if>
+					<h3>Sign In</h3>
 
-	<%@ include file="header.jsp"%>
+					<c:url var="post_url" value="/login" />
+					<form action="${post_url}" method="post" class="was-validated">
+						<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 
+						<div class="mb-3 mt-3">
+							<label for="username" class="form-label">Username:</label> <input
+								type="text" class="form-control" id="userName"
+								placeholder="Enter username" name="username" value="" required>
+							<div class="valid-feedback">Valid.</div>
+							<div class="invalid-feedback">Please fill out this field.</div>
+						</div>
+						<div class="mb-3">
+							<label for="password" class="form-label">Password:</label> <input
+								type="password" class="form-control" id="password"
+								placeholder="Enter password" name="password" value="" required>
+							<div class="valid-feedback">Valid.</div>
+							<div class="invalid-feedback">Please fill out this field.</div>
+						</div>
 
-	<div class="container my-3">
+						<input type="submit" name="Login" value="Sign In"
+							class="btn btn-primary"></input>
+					</form>
 
-		<c:if test="${error_string != null}">
-
-			<div class="alert alert-danger">${error_string} Click here to <a href="register_user">
-			Register</a></div>
-
-		</c:if>
-		<h3>Sign In</h3>
-
-		<c:url var="post_url" value="/login" />
-		<form action="${post_url}" method="post" class="was-validated">
-			<input type="hidden" name="${_csrf.parameterName}"
-				value="${_csrf.token}" />
-
-			<div class="mb-3 mt-3">
-				<label for="username" class="form-label">Username:</label> <input
-					type="text" class="form-control" id="userName"
-					placeholder="Enter username" name="username" value="" required>
-				<div class="valid-feedback">Valid.</div>
-				<div class="invalid-feedback">Please fill out this field.</div>
+					<p>Don't have an account? <a href="register_user">Register</a></p>
+				</div>
+				<div class="col-6">
+					<img class="shadow hero-img"
+						src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/GLA/7269/1621948227508/front-left-side-47.jpg?impolicy=resize&imwidth=480"
+						alt="">
+				</div>
 			</div>
-			<div class="mb-3">
-				<label for="password" class="form-label">Password:</label> <input
-					type="password" class="form-control" id="password"
-					placeholder="Enter password" name="password" value="" required>
-				<div class="valid-feedback">Valid.</div>
-				<div class="invalid-feedback">Please fill out this field.</div>
-			</div>
-
-			<input type="submit" name="Login" value="Sign In"
-				class="btn btn-primary"></input>
-		</form>
-
-		<p>New User? Click here to <a href="register_user" >Register</a></p>
-		<div style="margin: 80px;"></div>
-
-	</div>
+		</div>
 
 
 
 
-
-	<%@ include file="footer.jsp"%>
+	<%@ include file="footer.jsp" %>
 
 </body>
 </html>
