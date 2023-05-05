@@ -90,7 +90,7 @@
 														</div>
 														<div class="mb-3">
 															<label for="price" class="d-flex form-label">Price
-																(RM):</label>
+																(Rp):</label>
 															<sf:input type="text" class="form-control" id="price"
 																placeholder="Enter car price" name="price" path="price"
 																required="true" />
