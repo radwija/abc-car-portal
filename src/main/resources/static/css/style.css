@@ -5,6 +5,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+nav>.container {
+	padding: 0;
+}
+
 .container {
 	padding: 2rem 0rem;
 }
@@ -71,4 +75,18 @@ h4 {
 	/* height: 410.62px; */
 	left: 731px;
 	top: 150px;
+}
+
+.regist-container {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	height: 100vh;
+
+}
+
+
+.registration-form {
+	width: 500px;
+	border-radius: 15px;
 }
