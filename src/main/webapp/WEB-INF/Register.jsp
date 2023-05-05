@@ -38,54 +38,53 @@
 	<%@ include file="header.jsp"%>
 
 
-	<div class="container my-3">
+	<div class="container">
+		<div class="regist-container">
+			<div class="">
+				<c:if test="${success_register != null}">
+					<div class="alert alert-success">${success_register} Click here to <a href="login">
+							Sign In</a> </div>
+				</c:if>
+				<div class="registration-form shadow">
+					<div class="p-4">
+						<h3>Register</h3>
+						<sf:form action="register" method="post" class="was-validated" modelAttribute="user">
 
-		<c:if test="${success_register != null}">
+							<div class="mb-3 mt-3">
+								<label for="name" class="form-label">Name:</label>
+								<sf:input type="text" class="form-control" placeholder="Enter name" name="name"
+									path="name" required="true" />
+								<div class="valid-feedback">Valid.</div>
+								<div class="invalid-feedback">Please fill out this field.</div>
+							</div>
+							<div class="mb-3">
+								<label for="userName" class="form-label">Username:</label>
+								<sf:input type="text" class="form-control" id="userName"
+									placeholder="Enter username" name="userName" path="userName" required="true" />
+								<div class="valid-feedback">Valid.</div>
+								<div class="invalid-feedback">Please fill out this field.</div>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email:</label>
+								<sf:input type="email" class="form-control" placeholder="Enter username"
+									name="email" path="email" required="true" />
+								<div class="valid-feedback">Valid.</div>
+								<div class="invalid-feedback">Please fill out this field.</div>
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Password:</label>
+								<sf:input type="password" class="form-control" id="password"
+									placeholder="Enter password" name="password" path="password" required="true" />
+								<div class="valid-feedback">Valid.</div>
+								<div class="invalid-feedback">Please fill out this field.</div>
+							</div>
 
-			<div class="alert alert-success">${success_register} Click here to <a href="login">
-			Sign In</a> </div>
-
-		</c:if>
-		<h3>Register</h3>
-
-		
-		<sf:form action="register" method="post" class="was-validated" modelAttribute="user">
-			
-			<div class="mb-3 mt-3">
-				<label for="name" class="form-label">Name:</label> <sf:input
-					type="text" class="form-control" 
-					placeholder="Enter name" name="name" path="name" required="true" />
-				<div class="valid-feedback">Valid.</div>
-				<div class="invalid-feedback">Please fill out this field.</div>
+							<input type="submit" value="Register" class="btn btn-primary" style="width: 100%;" />
+						</sf:form>
+					</div>
+				</div>
 			</div>
-			<div class="mb-3">
-				<label for="userName" class="form-label">Username:</label> <sf:input
-					type="text" class="form-control" id="userName"
-					placeholder="Enter username" name="userName" path="userName" required="true" />
-				<div class="valid-feedback">Valid.</div>
-				<div class="invalid-feedback">Please fill out this field.</div>
-			</div>
-			<div class="mb-3">
-				<label for="email" class="form-label">Email:</label> <sf:input
-					type="email" class="form-control" 
-					placeholder="Enter username" name="email" path="email" required="true" />
-				<div class="valid-feedback">Valid.</div>
-				<div class="invalid-feedback">Please fill out this field.</div>
-			</div>
-			<div class="mb-3">
-				<label for="password" class="form-label">Password:</label> <sf:input
-					type="password" class="form-control" id="password"
-					placeholder="Enter password" name="password" path="password" required="true" />
-				<div class="valid-feedback">Valid.</div>
-				<div class="invalid-feedback">Please fill out this field.</div>
-			</div>
-
-			<input type="submit" value="Register"
-				class="btn btn-primary" />
-		</sf:form>
-
-		<div style="margin: 80px;"></div>
-
+		</div>
 	</div>
 
 
