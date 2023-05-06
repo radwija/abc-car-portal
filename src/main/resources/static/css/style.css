@@ -105,8 +105,12 @@ h4 {
 .user-detail {
 	display: flex;
 	width: 200px;
-	height: 200px;
-	background-color: white;
+	height: min-content;
+	border-radius: 15px;
+}
+
+.user-detail>img {
+	border-radius: 15px;
 }
 
 .information {
@@ -115,4 +119,10 @@ h4 {
 
 .information>div {
 	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.hero-img-wrapper {
+		display: none;
+	}
 }
