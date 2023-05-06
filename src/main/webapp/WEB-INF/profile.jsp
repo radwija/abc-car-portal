@@ -38,164 +38,108 @@
 								<c:set var="mobile" value="${u.mobile}"></c:set>
 								<c:set var="address" value="${u.address}"></c:set>
 							</c:forEach>
-							<div class="container">
-
-								<div class="row">
-									<h3 style="margin-bottom: 20px;">
-										User Profile
-										<!-- Button trigger modal -->
-										<button type="button" class="btn" data-bs-toggle="modal"
+							<div style="background-color: rgb(20, 20, 20);">
+								<div class="container text-white" style="height: min-content;">
+									<div class="d-flex">
+										<h1>User detail</h1>
+										<button type="button" class="btn text-white" data-bs-toggle="modal"
 											data-bs-target="#exampleModal">
 											<i class="fas fa-edit fa-sm"></i>
 										</button>
-									</h3>
-
-									<!-- Modal -->
-									<div class="modal fade" id="exampleModal" tabindex="-1"
-										aria-labelledby="exampleModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLabel">Update User</h5>
-													<button type="button" class="btn-close" data-bs-dismiss="modal"
-														aria-label="Close"></button>
-												</div>
-												<div class="modal-body">
-
-													<!-- User Update Form -->
-													<sf:form action="update" method="post" class="was-validated"
-														modelAttribute="user">
-														<div class="mb-3 mt-3">
-															<label for="name" class="form-label">Name:</label> <input
-																type="text" class="form-control"
-																placeholder="Enter name" name="name" path="name"
-																value="${name}" required="true" />
-															<div class="valid-feedback">Valid.</div>
-															<div class="invalid-feedback">Please fill out this field.
-															</div>
-														</div>
-														<div class="mb-3">
-															<label for="userName" class="form-label">Username:</label>
-															<input type="text" class="form-control" id="userName"
-																placeholder="Enter username" name="userName"
-																path="userName" value="${uname}" required="true" />
-															<div class="valid-feedback">Valid.</div>
-															<div class="invalid-feedback">Please fill out this field.
-															</div>
-														</div>
-														<div class="mb-3">
-															<label for="email" class="form-label">Email:</label> <input
-																type="email" class="form-control"
-																placeholder="Enter username" name="email" path="email"
-																value="${email}" required="true" />
-															<div class="valid-feedback">Valid.</div>
-															<div class="invalid-feedback">Please fill out this field.
-															</div>
-														</div>
-														<div class="mb-3">
-															<label for="mobile" class="form-label">Mobile:</label>
-															<input type="text" class="form-control" id="mobile"
-																placeholder="Enter mobile" name="mobile" path="mobile"
-																value="${mobile}" required="true" />
-															<div class="valid-feedback">Valid.</div>
-															<div class="invalid-feedback">Please fill out this field.
-															</div>
-														</div>
-														<div class="mb-3">
-															<label for="address" class="form-label">Address:</label>
-															<input type="text" class="form-control" id="address"
-																placeholder="Enter address" name="address"
-																path="address" value="${address}" required="true" />
-															<div class="valid-feedback">Valid.</div>
-															<div class="invalid-feedback">Please fill out this field.
-															</div>
-														</div>
-
-														<button type="submit" class="btn btn-primary">Update</button>
-													</sf:form>
-													<!-- User Update Form -->
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary"
-														data-bs-dismiss="modal">Close</button>
-
-												</div>
-											</div>
-										</div>
-
 									</div>
 
-								</div>
-
-								<div class="row">
-
-									<div class="col-lg-4">
-										<div class="card mb-4">
-											<div class="card-body text-center" style="height: 284px;">
-												<img src="/images/img_avatar3.png" alt="avatar"
-													class="rounded-circle img-fluid" style="width: 150px;">
-												<h5 class="my-3">${name}</h5>
-												<p class="text-muted mb-1">${address}</p>
-
-											</div>
+									<div class="user-detail text-white">
+										<img src="https://images.vexels.com/content/145908/preview/male-avatar-maker-2a7919.png"
+											alt="" style="width: 200px; height: 200px;">
+										<div class="information ">
+											<h3>${name}</h3>
+											<div>Email: ${email}</div>
+											<div>Username: ${uname}</div>
+											<div>Mobile: ${mobile}</div>
+											<div>Address: ${address}</div>
 										</div>
-
 									</div>
-									<div class="col-lg-8">
-										<div class="card mb-4">
-											<div class="card-body">
-												<div class="row">
-													<div class="col-sm-3">
-														<p class="mb-0">Full Name</p>
+									<div class="row">
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModal" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalLabel">Update User</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal"
+															aria-label="Close"></button>
 													</div>
-													<div class="col-sm-9">
-														<p class="text-muted mb-0">${name}</p>
-													</div>
-												</div>
-												<hr>
-												<div class="row">
-													<div class="col-sm-3">
-														<p class="mb-0">Email</p>
-													</div>
-													<div class="col-sm-9">
-														<p class="text-muted mb-0">${email}</p>
-													</div>
-												</div>
-												<hr>
-												<div class="row">
-													<div class="col-sm-3">
-														<p class="mb-0">Username</p>
-													</div>
-													<div class="col-sm-9">
-														<p class="text-muted mb-0">${uname}</p>
-													</div>
-												</div>
-												<hr>
-												<div class="row">
-													<div class="col-sm-3">
-														<p class="mb-0">Mobile</p>
-													</div>
-													<div class="col-sm-9">
-														<p class="text-muted mb-0">${mobile}</p>
-													</div>
-												</div>
-												<hr>
-												<div class="row">
-													<div class="col-sm-3">
-														<p class="mb-0">Address</p>
-													</div>
-													<div class="col-sm-9">
-														<p class="text-muted mb-0">${address}</p>
+													<div class="modal-body">
+
+														<!-- User Update Form -->
+														<sf:form action="update" method="post" class="was-validated"
+															modelAttribute="user">
+															<div class="mb-3 mt-3">
+																<label for="name" class="form-label">Name:</label>
+																<input type="text" class="form-control"
+																	placeholder="Enter name" name="name" path="name"
+																	value="${name}" required="true" />
+																<div class="valid-feedback">Valid.</div>
+																<div class="invalid-feedback">Please fill out this
+																	field.
+																</div>
+															</div>
+															<div class="mb-3">
+																<label for="userName"
+																	class="form-label">Username:</label>
+																<input type="text" class="form-control" id="userName"
+																	placeholder="Enter username" name="userName"
+																	path="userName" value="${uname}" required="true" />
+																<div class="valid-feedback">Valid.</div>
+																<div class="invalid-feedback">Please fill out this
+																	field.
+																</div>
+															</div>
+															<div class="mb-3">
+																<label for="email" class="form-label">Email:</label>
+																<input type="email" class="form-control"
+																	placeholder="Enter username" name="email"
+																	path="email" value="${email}" required="true" />
+																<div class="valid-feedback">Valid.</div>
+																<div class="invalid-feedback">Please fill out this
+																	field.
+																</div>
+															</div>
+															<div class="mb-3">
+																<label for="mobile" class="form-label">Mobile:</label>
+																<input type="text" class="form-control" id="mobile"
+																	placeholder="Enter mobile" name="mobile"
+																	path="mobile" value="${mobile}" required="true" />
+																<div class="valid-feedback">Valid.</div>
+																<div class="invalid-feedback">Please fill out this
+																	field.
+																</div>
+															</div>
+															<div class="mb-3">
+																<label for="address" class="form-label">Address:</label>
+																<input type="text" class="form-control" id="address"
+																	placeholder="Enter address" name="address"
+																	path="address" value="${address}" required="true" />
+																<div class="valid-feedback">Valid.</div>
+																<div class="invalid-feedback">Please fill out this
+																	field.
+																</div>
+															</div>
+
+															<button type="submit"
+																class="btn btn-primary">Update</button>
+														</sf:form>
+														<!-- User Update Form -->
 													</div>
 												</div>
 											</div>
 										</div>
-
 									</div>
 								</div>
 
-
-
+							</div>
+							<div class="container">
 								<div class="row p-3">
 									<nav>
 										<div class="nav nav-tabs" id="nav-tab" role="tablist">
