@@ -22,7 +22,7 @@
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--  Access the Static Resources without using spring URL -->
 <link href="/css/style.css" rel="stylesheet" />
