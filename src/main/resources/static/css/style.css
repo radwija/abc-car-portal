@@ -126,3 +126,7 @@ h4 {
 		display: none;
 	}
 }
+
+.text-uppercase {
+	margin-left: 20px !important; 
+}
