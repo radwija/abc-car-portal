@@ -87,7 +87,7 @@
 																	type="text" class="form-control"
 																	placeholder="Enter role" name="name" value="${r.name}"
 																	required="true" />
-																<div class="valid-feedback">Valid.</div>
+																<div class="valid-feedback">Valid</div>
 																<div class="invalid-feedback">Please fill out this
 																	field.</div>
 															</div>
@@ -132,7 +132,7 @@
 																type="text" class="form-control"
 																placeholder="Enter name" name="name" value="${u.name}"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -141,7 +141,7 @@
 															<input type="text" class="form-control" id="userName"
 																placeholder="Enter username" name="userName"
 																value="${u.userName}" required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -151,7 +151,7 @@
 																type="email" class="form-control"
 																placeholder="Enter username" name="email"
 																value="${u.email}" required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -160,7 +160,7 @@
 																type="text" class="form-control" id="mobile"
 																placeholder="Enter mobile" name="mobile"
 																value="${u.mobile}" required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -169,7 +169,7 @@
 															<input type="text" class="form-control" id="address"
 																placeholder="Enter address" name="address"
 																value="${u.address}" required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>

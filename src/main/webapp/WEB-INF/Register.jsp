@@ -54,7 +54,7 @@
 														<sf:input type="text" class="form-control"
 															placeholder="Enter name" name="name" path="name"
 															required="true" />
-														<div class="valid-feedback">Valid.</div>
+														<div class="valid-feedback">Valid</div>
 														<div class="invalid-feedback">Please fill out this field.</div>
 													</div>
 													<div class="mb-3">
@@ -62,7 +62,7 @@
 														<sf:input type="text" class="form-control" id="userName"
 															placeholder="Enter username" name="userName" path="userName"
 															required="true" />
-														<div class="valid-feedback">Valid.</div>
+														<div class="valid-feedback">Valid</div>
 														<div class="invalid-feedback">Please fill out this field.</div>
 													</div>
 													<div class="mb-3">
@@ -70,7 +70,7 @@
 														<sf:input type="email" class="form-control"
 															placeholder="Enter username" name="email" path="email"
 															required="true" />
-														<div class="valid-feedback">Valid.</div>
+														<div class="valid-feedback">Valid</div>
 														<div class="invalid-feedback">Please fill out this field.</div>
 													</div>
 													<div class="mb-3">
@@ -78,7 +78,7 @@
 														<sf:input type="password" class="form-control" id="password"
 															placeholder="Enter password" name="password" path="password"
 															required="true" />
-														<div class="valid-feedback">Valid.</div>
+														<div class="valid-feedback">Valid</div>
 														<div class="invalid-feedback">Please fill out this field.</div>
 													</div>
 

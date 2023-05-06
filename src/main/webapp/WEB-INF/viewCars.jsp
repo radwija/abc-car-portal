@@ -74,7 +74,7 @@
 															<sf:input type="text" class="form-control"
 																placeholder="Enter car name" name="name" path="name"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -83,7 +83,7 @@
 															<sf:input type="text" class="form-control"
 																placeholder="Enter model" name="model" path="model"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -93,7 +93,7 @@
 															<sf:input type="text" class="form-control" id="price"
 																placeholder="Enter car price" name="price" path="price"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -103,7 +103,7 @@
 															<sf:input type="text" class="form-control"
 																placeholder="Enter make year" name="make" path="make"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -116,7 +116,7 @@
 																placeholder="Enter registeration date"
 																name="registeration" path="registeration"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>
@@ -125,7 +125,7 @@
 																type="file" class="form-control" name="fileImage"
 																id="photo" accept="image/png, image/jpeg"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>

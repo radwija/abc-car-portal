@@ -79,7 +79,7 @@
 																<input type="text" class="form-control"
 																	placeholder="Enter name" name="name" path="name"
 																	value="${name}" required="true" />
-																<div class="valid-feedback">Valid.</div>
+																<div class="valid-feedback">Valid</div>
 																<div class="invalid-feedback">Please fill out this
 																	field.
 																</div>
@@ -90,7 +90,7 @@
 																<input type="text" class="form-control" id="userName"
 																	placeholder="Enter username" name="userName"
 																	path="userName" value="${uname}" required="true" />
-																<div class="valid-feedback">Valid.</div>
+																<div class="valid-feedback">Valid</div>
 																<div class="invalid-feedback">Please fill out this
 																	field.
 																</div>
@@ -100,7 +100,7 @@
 																<input type="email" class="form-control"
 																	placeholder="Enter username" name="email"
 																	path="email" value="${email}" required="true" />
-																<div class="valid-feedback">Valid.</div>
+																<div class="valid-feedback">Valid</div>
 																<div class="invalid-feedback">Please fill out this
 																	field.
 																</div>
@@ -110,7 +110,7 @@
 																<input type="text" class="form-control" id="mobile"
 																	placeholder="Enter mobile" name="mobile"
 																	path="mobile" value="${mobile}" required="true" />
-																<div class="valid-feedback">Valid.</div>
+																<div class="valid-feedback">Valid</div>
 																<div class="invalid-feedback">Please fill out this
 																	field.
 																</div>
@@ -120,7 +120,7 @@
 																<input type="text" class="form-control" id="address"
 																	placeholder="Enter address" name="address"
 																	path="address" value="${address}" required="true" />
-																<div class="valid-feedback">Valid.</div>
+																<div class="valid-feedback">Valid</div>
 																<div class="invalid-feedback">Please fill out this
 																	field.
 																</div>

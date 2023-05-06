@@ -103,7 +103,7 @@
 																						name="name" path="name"
 																						required="true"
 																						value="${c.name}" />
-																					<div class="valid-feedback">Valid.
+																					<div class="valid-feedback">Valid
 																					</div>
 																					<div class="invalid-feedback">Please
 																						fill out this
@@ -118,7 +118,7 @@
 																						name="model" path="model"
 																						value="${c.model}"
 																						required="true" />
-																					<div class="valid-feedback">Valid.
+																					<div class="valid-feedback">Valid
 																					</div>
 																					<div class="invalid-feedback">Please
 																						fill out this
@@ -133,7 +133,7 @@
 																						name="price" path="price"
 																						value="${c.price}"
 																						required="true" />
-																					<div class="valid-feedback">Valid.
+																					<div class="valid-feedback">Valid
 																					</div>
 																					<div class="invalid-feedback">Please
 																						fill out this
@@ -148,7 +148,7 @@
 																						name="make" path="make"
 																						value="${c.make}"
 																						required="true" />
-																					<div class="valid-feedback">Valid.
+																					<div class="valid-feedback">Valid
 																					</div>
 																					<div class="invalid-feedback">Please
 																						fill out this
@@ -165,7 +165,7 @@
 																						path="registeration"
 																						value="${c.registeration}"
 																						required="true" />
-																					<div class="valid-feedback">Valid.
+																					<div class="valid-feedback">Valid
 																					</div>
 																					<div class="invalid-feedback">Please
 																						fill out this
@@ -176,7 +176,7 @@
 																type="file" class="form-control" name="fileImage"
 																id="photo" accept="image/png, image/jpeg"
 																required="true" />
-															<div class="valid-feedback">Valid.</div>
+															<div class="valid-feedback">Valid</div>
 															<div class="invalid-feedback">Please fill out this
 																field.</div>
 														</div>-->
@@ -269,7 +269,7 @@
 																						name="sellStatus"
 																						value="${c.sellStatus}"
 																						required="true" />
-																					<div class="valid-feedback">Valid.
+																					<div class="valid-feedback">Valid
 																					</div>
 																					<div class="invalid-feedback">Please
 																						fill out this
@@ -329,7 +329,7 @@
 																							value="${b.bookStatus}"
 																							required="true" />
 																						<div class="valid-feedback">
-																							Valid.</div>
+																							Valid</div>
 																						<div class="invalid-feedback">
 																							Please fill out this
 																							field.</div>

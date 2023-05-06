@@ -47,14 +47,14 @@
 											<label for="username" class="form-label">Username:</label> <input
 												type="text" class="form-control" id="userName"
 												placeholder="Enter username" name="username" value="" required>
-											<div class="valid-feedback">Valid.</div>
+											<div class="valid-feedback">Valid</div>
 											<div class="invalid-feedback">Please fill out this field.</div>
 										</div>
 										<div class="mb-3">
 											<label for="password" class="form-label">Password:</label> <input
 												type="password" class="form-control" id="password"
 												placeholder="Enter password" name="password" value="" required>
-											<div class="valid-feedback">Valid.</div>
+											<div class="valid-feedback">Valid</div>
 											<div class="invalid-feedback">Please fill out this field.</div>
 										</div>
 

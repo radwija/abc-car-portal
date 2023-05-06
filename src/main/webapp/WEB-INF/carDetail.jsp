@@ -149,7 +149,7 @@
 																				Date:</label> <input type="date"
 																				class="form-control" name="bookDate"
 																				required="true" />
-																			<div class="valid-feedback">Valid.</div>
+																			<div class="valid-feedback">Valid</div>
 																			<div class="invalid-feedback">Please fill
 																				out this
 																				field.</div>
@@ -197,7 +197,7 @@
 																				class="form-control"
 																				placeholder="Enter bidding price"
 																				name="bidderPrice" required="true" />
-																			<div class="valid-feedback">Valid.</div>
+																			<div class="valid-feedback">Valid</div>
 																			<div class="invalid-feedback">Please fill
 																				out this
 																				field.</div>
