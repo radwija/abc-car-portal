@@ -46,9 +46,7 @@
 								<div class="row g-0">
 									<div class="col-md-6">
 										<div class="main_image shadow-sm">
-											<!-- <img src="${image}" id="main_product_image" width="100%" style="border-radius: 10px;"> -->
-											<img src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="
-												id="main_product_image" width="100%">
+											<img src="${image}" id="main_product_image" width="100%" style="border-radius: 10px;">
 										</div>
 										<div class="d-flex flex-column justify-content-center">
 
@@ -149,7 +147,7 @@
 																				Date:</label> <input type="date"
 																				class="form-control" name="bookDate"
 																				required="true" />
-																			<div class="valid-feedback">Valid</div>
+																			<div class="valid-feedback">Valid..</div>
 																			<div class="invalid-feedback">Please fill
 																				out this
 																				field.</div>
@@ -197,7 +195,7 @@
 																				class="form-control"
 																				placeholder="Enter bidding price"
 																				name="bidderPrice" required="true" />
-																			<div class="valid-feedback">Valid</div>
+																			<div class="valid-feedback"Valid.d.</div>
 																			<div class="invalid-feedback">Please fill
 																				out this
 																				field.</div>
