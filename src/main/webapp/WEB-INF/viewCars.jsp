@@ -28,12 +28,7 @@
 
 					<%@ include file="header.jsp" %>
 						<div class="container">
-							<c:if test="${success_post != null}">
-								<div class="alert alert-success">${success_post}
-									Click here to <a href="/car_detail?cid=${id}">View</a> your car
-									post
-								</div>
-							</c:if>
+
 							<sec:authorize access="hasRole('Users')">
 								<!-- post car link-->
 								<div class="row mb-5">
@@ -111,7 +106,7 @@
 															<label for="registeration"
 																class="d-flex form-label">Registration
 																Date:</label>
-															<sf:input type="text" class="form-control"
+															<sf:input type="date" class="form-control"
 																id="registeration"
 																placeholder="Enter registeration date"
 																name="registeration" path="registeration"
@@ -189,6 +184,12 @@
 
 									</c:if>
 								</c:forEach>
+								<c:if test="${success_post != null}">
+									<div class="alert alert-success">${success_post}
+										Click here to <a href="/car_detail?cid=${id}">View</a> your car
+										post
+									</div>
+								</c:if>
 							</div>
 						</div>
 
