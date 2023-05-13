@@ -12,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -29,6 +31,7 @@ public class User {
 
     @Column(name="user_name")
     private String userName;
+    @JsonIgnore
     private String password;
 
     @ManyToMany
