@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -28,46 +27,48 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    	System.out.println("At Authen configure");
+        System.out.println("At Authen configure");
         auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
- 
-    	System.out.println("At Security configure");
+
+        System.out.println("At Security configure");
         http
                 .formLogin()
-                    .loginPage("/login")
-                    .loginProcessingUrl("/login")
-                    .failureUrl("/login_error")
-                    .permitAll()
-                    .defaultSuccessUrl("/cars", true)
+                .loginPage("/login")
+                .loginProcessingUrl("/login")
+                .failureUrl("/login_error")
+                .permitAll()
+                .defaultSuccessUrl("/cars", true)
                 .and()
                 .csrf()
                 .and()
                 .authorizeRequests()
-                    .antMatchers("/").permitAll()
-                    .antMatchers("/css/**").permitAll()
-                    .antMatchers("/images/**").permitAll()
-                    .antMatchers("/js/**").permitAll()
-                    .antMatchers(HttpMethod.GET, "/favicon.*").permitAll()
-                    .antMatchers(HttpMethod.GET, "/login").permitAll()
-                    .antMatchers(HttpMethod.GET, "/cars").hasAnyRole("Users","Administrator")
-                    .antMatchers(HttpMethod.GET, "/profile").hasAnyRole("Users","Administrator")
-                    .antMatchers(HttpMethod.GET, "/car_detail").hasAnyRole("Users","Administrator")
-                    .antMatchers(HttpMethod.GET, "/users").hasRole("Administrator")
-                    .antMatchers(HttpMethod.GET, "/view").hasRole("Administrator")
-                    .antMatchers(HttpMethod.POST, "/edit").hasRole("Administrator")
-                    .antMatchers(HttpMethod.GET, "/delete").hasRole("Administrator")
-                    .antMatchers(HttpMethod.GET, "/all_cars").hasRole("Administrator")
-                    .antMatchers(HttpMethod.POST, "/edit_car").hasRole("Administrator")
-                    .antMatchers(HttpMethod.GET, "/delete_car").hasRole("Administrator")
-                    .antMatchers(HttpMethod.GET, "/deleteCar").hasRole("Users")
+                .antMatchers("/").permitAll()
+                .antMatchers("/register").permitAll()
+                .antMatchers("/css/**").permitAll()
+                .antMatchers("/images/**").permitAll()
+                .antMatchers("/js/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/favicon.*").permitAll()
+                .antMatchers(HttpMethod.GET, "/login").permitAll()
+                .antMatchers(HttpMethod.GET, "/cars").hasAnyRole("Users", "Administrator")
+                .antMatchers(HttpMethod.GET, "/profile").hasAnyRole("Users", "Administrator")
+                .antMatchers(HttpMethod.GET, "/car_detail").hasAnyRole("Users", "Administrator")
+                .antMatchers(HttpMethod.GET, "/users").hasRole("Administrator")
+                .antMatchers(HttpMethod.GET, "/view").hasRole("Administrator")
+                .antMatchers(HttpMethod.POST, "/edit").hasRole("Administrator")
+                .antMatchers(HttpMethod.GET, "/delete").hasRole("Administrator")
+                .antMatchers(HttpMethod.GET, "/all_cars").hasRole("Administrator")
+                .antMatchers(HttpMethod.POST, "/edit_car").hasRole("Administrator")
+                .antMatchers(HttpMethod.GET, "/delete_car").hasRole("Administrator")
+                .antMatchers(HttpMethod.GET, "/deleteCar").hasRole("Users")
                 .and()
                 .logout()
-                    .logoutSuccessUrl("/login")
-                    .invalidateHttpSession(true);
-                  
+                .logoutSuccessUrl("/login")
+                .invalidateHttpSession(true);
+        http.csrf().disable();
+
     }
 }
