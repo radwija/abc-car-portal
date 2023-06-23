@@ -1,6 +1,7 @@
 package com.abccarportal.service;
 
 import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
@@ -42,11 +43,11 @@ public class CarServiceTest {
 	public void testSaveCar() {
 		Car car = new Car();
 		car.setId((long) 1);
-		car.setName("Perodua Myvi");
-		car.setModel("Perodua");
-		car.setPrice("33000");
-		car.setMake("2021");
-		car.setRegisteration("Jan 2021");
+		car.setName("Toyota");
+		car.setModel("Avanza");
+		car.setPrice("200000000");
+		car.setMake("2023");
+		car.setRegisteration("Feb 2023");
 		Mockito.when(carRepository.save(car)).thenReturn(car);
 		Car savedCar = carService.save(car);
 		Assert.assertEquals(car, savedCar);
@@ -56,7 +57,7 @@ public class CarServiceTest {
 	@Test
 	public void testSearchCar() {
 		Car car = new Car();
-		String searchInput = "Perodua";
+		String searchInput = "Toyota";
 		car.setModel(searchInput);
 		
 		List<Car> searchCar = new ArrayList<Car>();
@@ -71,13 +72,13 @@ public class CarServiceTest {
 	@Test
 	public void testSaveCarBidding() {
 		Car car = new Car();
-		car.setName("Perodua Myvi");
+		car.setName("Toyota");
 		User user = new User();
-		user.setName("Amelia Earhart");
+		user.setName("Pande Radwija");
 		CarBidding bid = new CarBidding();
 		bid.setCar(car);
 		bid.setUser(user);
-		bid.setBidderPrice(6000);
+		bid.setBidderPrice(180000000);
 		
 		Mockito.when(bidRepository.save(bid)).thenReturn(bid);
 		CarBidding saveBid = carService.saveBid(bid);

@@ -30,7 +30,7 @@
 
 					<%@ include file="header.jsp" %>
 
-						<c:forEach items="${car}" var="c">
+						<c:forEach items="${carList}" var="c">
 							<c:set var="id" value="${c.id}"></c:set>
 							<c:set var="name" value="${c.name}"></c:set>
 							<c:set var="image" value="${c.photoImagePath}"></c:set>
@@ -46,7 +46,8 @@
 								<div class="row g-0">
 									<div class="col-md-6">
 										<div class="main_image shadow-sm">
-											<img src="${image}" id="main_product_image" width="100%" style="border-radius: 10px;">
+											<img src="${image}" id="main_product_image" width="100%"
+												style="border-radius: 10px;">
 										</div>
 										<div class="d-flex flex-column justify-content-center">
 
@@ -195,24 +196,22 @@
 																				class="form-control"
 																				placeholder="Enter bidding price"
 																				name="bidderPrice" required="true" />
-																			<div class="valid-feedback"Valid.d.</div>
-																			<div class="invalid-feedback">Please fill
-																				out this
-																				field.</div>
-																		</div>
+																			<div class="valid-feedback" Valid.d.</div>
+																				<div class="invalid-feedback">Please
+																					fill
+																					out this
+																					field.</div>
+																			</div>
 
-																		<input type="hidden" name="cid" value="${id}">
+																			<input type="hidden" name="cid"
+																				value="${id}">
 
-																		<button type="submit"
-																			class="btn btn-primary">Bid
-																			at this price</button>
+																			<button type="submit"
+																				class="btn btn-primary">Bid
+																				at this price</button>
+																			w
 																	</sf:form>
 																	<!-- User Update Form -->
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-secondary"
-																		data-bs-dismiss="modal">Close</button>
-
 																</div>
 															</div>
 														</div>
@@ -241,7 +240,7 @@
 												</tr>
 											</thead>
 											<tbody>
-												<c:forEach items="${bid}" var="b">
+												<c:forEach items="${bidList}" var="b">
 													<tr>
 														<td>${b.bidderName}</td>
 														<td>${b.bidDate}</td>

@@ -82,7 +82,7 @@ h4 {
 	top: 150px;
 }
 
-.regist-container {
+.centered-wrapper {
 	display: flex;
 	justify-content: center;
 	/* align-items: center; */
@@ -128,5 +128,9 @@ h4 {
 }
 
 .text-uppercase {
-	margin-left: 20px !important; 
+	margin-left: 20px !important;
+}
+
+.mt-n1 {
+	margin-left: 20px !important;
 }
